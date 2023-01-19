@@ -1,13 +1,21 @@
-import { Html, Head, Main, NextScript } from 'next/document'
+import {
+  Html, Head, Main, NextScript,
+} from 'next/document';
 
-export default function Document() {
-  return (
+import Header from '@/components/Header';
+
+const Document = () => (
     <Html lang="en">
       <Head />
+
       <body>
+        <Header />
+
         <Main />
+
         <NextScript />
       </body>
     </Html>
-  )
-}
+);
+
+export default Document;
